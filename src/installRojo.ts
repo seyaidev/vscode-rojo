@@ -180,7 +180,7 @@ export async function installRojo(folder: string) {
     }
   }
 
-  await exec("aftman trust rojo-rbx/rojo", {
+  await exec("aftman trust UpliftGames/rojo", {
     cwd: folder,
   })
 
@@ -198,7 +198,7 @@ export async function installRojo(folder: string) {
     }).catch(() => null)
 
     if (!output) {
-      await exec("aftman add rojo-rbx/rojo", {
+      await exec("aftman add UpliftGames/rojo", {
         cwd: folder,
       })
     }
@@ -207,7 +207,7 @@ export async function installRojo(folder: string) {
       cwd: folder,
     })
 
-    await exec("aftman add rojo-rbx/rojo", {
+    await exec("aftman add UpliftGames/rojo", {
       cwd: folder,
     })
   }
